@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;}
+
+.spacing {
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.spacing p {
+    padding: 100px 0;
+    /* border: 1px solid black; */
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(14, 107, 110);
+}
+
+.continue {
+    text-align: center;
+}
+.continue button {
+    background-color:  rgb(14, 107, 110);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.header {
+    background-color: rgb(14, 107, 110);
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.header-part {
+    display: inline-block;
+    
+}
+
+.nav {
+    float: right;
+}
+
+.nav-list {
+    
+    padding: 0;
+}
+
+
+.nav-list li{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.title, .nav {
+    vertical-align: middle;
+}
+
+.title {
+    padding: 0px 40px 0px 20px;
+    border-right: white solid 2px;
+}
+
+.title h1, .title h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+
+.title h1 {
+    font-size: 30px;
+}
+
+.title h2 {
+    font-size: 15px;
+
+}
