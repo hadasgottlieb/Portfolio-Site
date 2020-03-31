@@ -8,18 +8,22 @@ body {
     max-width: 70%;
     margin: auto;
     text-align: center;
+    
 }
 
 .spacing p {
-    padding: 100px 0;
+    padding: 50px 0;
     /* border: 1px solid black; */
     font-size: 50px;
     font-weight: bolder;
     color: rgb(14, 107, 110);
+    margin-bottom: 0;
+
 }
 
 .continue {
     text-align: center;
+    padding-bottom: 50px
 }
 .continue button {
     background-color:  rgb(14, 107, 110);
@@ -58,7 +62,9 @@ body {
 
 .nav-list li{
     display: inline-block;
+    color: white;
     font-size: 20px;
+    letter-spacing: .1em;
 }
 
 .title, .nav {
@@ -78,9 +84,16 @@ body {
 
 .title h1 {
     font-size: 30px;
+    letter-spacing: .05em;
 }
 
 .title h2 {
     font-size: 15px;
 
+}
+
+.symbols {
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: inherit;
 }
