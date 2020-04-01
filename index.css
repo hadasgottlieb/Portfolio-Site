@@ -2,7 +2,10 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: 'Raleway', sans-serif;}
+    font-family: 'Raleway', sans-serif;
+    color: #78bfb6;
+    background-color: white;
+}
 
 .spacing {
     max-width: 70%;
@@ -15,8 +18,8 @@ body {
     padding: 50px 0;
     /* border: 1px solid black; */
     font-size: 50px;
-    font-weight: bolder;
-    color: rgb(14, 107, 110);
+    /* font-weight: bolder; */
+    /* color: rgb(14, 107, 110); */
     margin-bottom: 0;
 
 }
@@ -26,18 +29,26 @@ body {
     padding-bottom: 50px
 }
 .continue button {
-    background-color:  rgb(14, 107, 110);
-    color: white;
+    background-color: white;
+    color: #78bfb6;
     border: none;
     font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
     padding: 5px 20px;
     width: 20%;
     cursor: pointer;
 }
 
+.continue button:hover {
+    color: #7f7d78;
+  
+}
+
 .header {
-    background-color: rgb(14, 107, 110);
-    color: white;
+    /* background-color: rgb(14, 107, 110);
+    color: white; */
     padding: 20px;
     overflow: hidden;
     font-weight: lighter;
@@ -56,15 +67,35 @@ body {
 
 .nav-list {
     
-    padding: 0;
+    padding: 15px;
+    margin:  0;
 }
 
 
 .nav-list li{
     display: inline-block;
-    color: white;
+    
+    text-decoration: none;
     font-size: 20px;
     letter-spacing: .1em;
+    font-weight: bold;
+    text-transform: uppercase;
+ 
+}
+
+.nav-list li a {
+    /* color: white; */
+    color: #78bfb6;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 2px;
+
+}
+
+.nav-list li a:hover {
+    /* color: rgb(14, 107, 110); */
+    background-color: white;
+    color: #7f7d78;
 }
 
 .title, .nav {
@@ -80,15 +111,20 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 100;
+    text-transform: uppercase;
 }
 
 .title h1 {
+    color: rgb(216, 182, 31);
+    font-weight: bold;
     font-size: 30px;
     letter-spacing: .05em;
+    padding-top: 10px;
 }
 
 .title h2 {
     font-size: 15px;
+    color: #7f7d78;
 
 }
 
