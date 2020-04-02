@@ -37,7 +37,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     padding: 5px 20px;
-    width: 20%;
+    max-width: 300px;
     cursor: pointer;
 }
 
@@ -129,7 +129,66 @@ body {
 }
 
 .symbols {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     padding-bottom: 50px;
-    background-color: inherit;
+}
+
+.projects-list-container {
+    width: 100%;
+}
+
+.projects-list {
+    padding: 0;
+    margin: 0;
+
+}
+.project {
+    list-style-type: none;
+
+}
+
+.collapsible-header {
+    background-color: rgb(216, 182, 31);
+    color: white;
+    cursor: pointer; 
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    font-size: 30px;
+    overflow: hidden;
+    border-bottom: white solid 1px;
+}
+
+.active, .collapsible-header:hover {
+    background-color: rgba(216, 182, 31, 0.726) ;
+}
+.collapsible-body {
+    padding: 30px 20px;
+    color: #7f7d78;
+    background-color: white;
+    display: none;
+}
+
+.collapsible-body p {
+    margin: 0 0 16px;
+}
+
+.collapsible-body a {
+    display: inline;
+    color: #7f7d78;
+    text-decoration: none;
+}
+.collapsible-body a:hover {
+    font-weight: bold; 
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 7px;
+
+    top: 4px;
 }
