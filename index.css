@@ -135,6 +135,36 @@ body {
     padding-bottom: 50px;
 }
 
+/*******Projects list styling***********/
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+ 
+    padding: 0 1em 0 1em;
+    margin: 0;
+}
+
+.project {
+    background-color: rgb(216, 182, 31);
+    cursor: pointer;
+    list-style: none;
+    margin: 0;
+    color: #575552;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.project:nth-child(odd) {
+    background-color: rgb(214, 194, 101);
+}
+
+.project:hover {
+    background-color: rgb(247, 233, 171);
+}
+
+/* 
 .projects-list-container {
     width: 100%;
 }
@@ -181,9 +211,9 @@ body {
     text-decoration: none;
 }
 .collapsible-body a:hover {
-    font-weight: bold; 
+    font-weight: bold;  
 }
-
+*/
 .logo {
     width: 20px;
     height: 20px;
