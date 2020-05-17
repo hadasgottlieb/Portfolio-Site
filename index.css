@@ -142,7 +142,7 @@ body {
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 300px;
  
-    padding: 0 1em 0 1em;
+    padding: 0 1em 1em 1em;
     margin: 0;
 }
 
@@ -161,7 +161,11 @@ body {
 }
 
 .project:hover {
-    background-color: rgb(247, 233, 171);
+    background-color: rgb(214, 194, 101);
+}
+
+.project:nth-child(odd):hover {
+    background-color: rgb(216, 182, 31);
 }
 
 /* 
