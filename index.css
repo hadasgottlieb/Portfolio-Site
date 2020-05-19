@@ -1,11 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+ 
     color: #78bfb6;
     background-color: white;
 }
+a, a:active, a:hover, a:focus, a:visited {
+    text-decoration: none;
+}
+
 
 .spacing {
     max-width: 70%;
@@ -28,10 +37,11 @@ body {
     text-align: center;
     padding-bottom: 50px
 }
-.continue button {
+.continue a {
     background-color: white;
     color: #78bfb6;
     border: none;
+    text-decoration: none;
     font-size: 20px;
     font-family: inherit;
     font-weight: bold;
@@ -41,9 +51,13 @@ body {
     cursor: pointer;
 }
 
-.continue button:hover {
+.continue a:hover {
     color: #7f7d78;
   
+}
+
+.continue a > i {
+    size: 2x;
 }
 
 .header {
@@ -53,6 +67,7 @@ body {
     overflow: hidden;
     font-weight: lighter;
     font-family: 'Raleway', sans-serif;
+    text-decoration: none;
     
 }
 
@@ -105,7 +120,9 @@ body {
 .title {
     padding: 0px 40px 0px 20px;
     border-right: white solid 2px;
+    text-decoration: none;
 }
+
 
 .title h1, .title h2 {
     margin: 0;
@@ -141,6 +158,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 300px;
+    grid-gap: 10px;
  
     padding: 0 1em 1em 1em;
     margin: 0;
@@ -156,68 +174,11 @@ body {
     overflow: hidden;
 }
 
-.project:nth-child(odd) {
-    background-color: rgb(214, 194, 101);
-}
-
 .project:hover {
-    background-color: rgb(214, 194, 101);
+    background-color: rgb(218, 187, 53);
 }
 
-.project:nth-child(odd):hover {
-    background-color: rgb(216, 182, 31);
-}
 
-/* 
-.projects-list-container {
-    width: 100%;
-}
-
-.projects-list {
-    padding: 0;
-    margin: 0;
-
-}
-.project {
-    list-style-type: none;
-
-}
-
-.collapsible-header {
-    background-color: rgb(216, 182, 31);
-    color: white;
-    cursor: pointer; 
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-    font-size: 30px;
-    overflow: hidden;
-    border-bottom: white solid 1px;
-}
-
-.active, .collapsible-header:hover {
-    background-color: rgba(216, 182, 31, 0.726) ;
-}
-.collapsible-body {
-    padding: 30px 20px;
-    color: #7f7d78;
-    background-color: white;
-    display: none;
-}
-
-.collapsible-body p {
-    margin: 0 0 16px;
-}
-
-.collapsible-body a {
-    display: inline;
-    color: #7f7d78;
-    text-decoration: none;
-}
-.collapsible-body a:hover {
-    font-weight: bold;  
-}
-*/
 .logo {
     width: 20px;
     height: 20px;
@@ -225,4 +186,30 @@ body {
     margin-right: 7px;
 
     top: 4px;
+}
+
+/*Resume styling*/
+
+.resume-container {
+    text-align: center;
+    font-size: 30px;
+}
+
+.resume-container h1 {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.resume-container i {
+    cursor: pointer;
+    font-size: 50px;
+    margin: 1em 10px 0;
+}
+
+.resume-container i:hover {
+    color: #7f7d78;
+}
+
+.resume-container iframe {
+    margin: 20px 0;
 }
